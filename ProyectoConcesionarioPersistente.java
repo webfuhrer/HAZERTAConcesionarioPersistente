@@ -6,6 +6,7 @@
 package proyectoconcesionariopersistente;
 
 import java.io.FileWriter;
+import java.util.ArrayList;
 
 /**
  *
@@ -33,6 +34,8 @@ public class ProyectoConcesionarioPersistente {
                 break;
             case 2:
                 //Listar
+                ArrayList<Coche> lista_coches=AccesoFichero.obtenerCoches();
+                EntradaSalida.mostrarCoches(lista_coches);
                 break;
             
             }

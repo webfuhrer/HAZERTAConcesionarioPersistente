@@ -5,6 +5,7 @@
  */
 package proyectoconcesionariopersistente;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -37,6 +38,14 @@ public class EntradaSalida {
         int potencia=sc.nextInt();
         Coche c=new Coche(marca, modelo, potencia);
         return c;
+    }
+
+    static void mostrarCoches(ArrayList<Coche> lista_coches) {
+      
+        for(Coche x: lista_coches)
+        {
+            System.out.println(x);
+        }
     }
     
 }
